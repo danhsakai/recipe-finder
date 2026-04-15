@@ -265,7 +265,7 @@ main {
   height: 12px;
   position: absolute;
   bottom: 16px;
-  left:;
+
   height: 32%;
   z-index: -1;
   border-radius: 6px;
@@ -535,7 +535,18 @@ hr {
     width: 98%;
   }
   .hero__title {
-    font-size: var(--font-size-52);
+    font-size: var(--font-size-40);
+  }
+  .hero__text,
+  .features__item-desc,
+  .reallife__text,
+  .cta__text {
+    font-size: var(--font-size-18);
+  }
+  .header__cta,
+  .hero__cta,
+  .cta__button {
+    font-size: var(--font-size-18);
   }
   .hero__img {
     width: 100%;
@@ -543,7 +554,7 @@ hr {
   .features__title,
   .reallife__title,
   .cta__title {
-    font-size: var(--font-size-40);
+    font-size: var(--font-size-32);
   }
   .features__grid {
     display: flex;
@@ -551,7 +562,7 @@ hr {
     text-align: center;
   }
   .features__item-title {
-    font-size: var(--font-size-32);
+    font-size: var(--font-size-24);
   }
   .features__grid .features__item {
     width: 100%;
