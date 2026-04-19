@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recipe Finder | Recipes</title>
-    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/src/header-common.css" />
   </head>
   <body>
     <header class="header">
@@ -14,23 +14,48 @@
         </a>
         <ul class="header__menu">
           <li class="header__menu-item">
-            <a
-              href="/index.html"
-              class="header__menu-link header__menu-link--active"
-              >Home</a
-            >
+            <a href="/index.html" class="header__menu-link">Home</a>
           </li>
           <li class="header__menu-item">
             <a href="/about.html" class="header__menu-link">About</a>
           </li>
           <li class="header__menu-item">
-            <a href="/recipes.html" class="header__menu-link">Recipes</a>
+            <a
+              href="/recipes.html"
+              class="header__menu-link"
+              style="
+                border-bottom: 3px solid var(--orange-500);
+                border-radius: 3px;
+              "
+              >Recipes</a
+            >
           </li>
         </ul>
         <button class="header__cta">Browse recipes</button>
       </nav>
+      <nav class="header__nav--mobile">
+        <a href="/index.html" class="header__logo">
+          <img src="/images/logo.svg" alt="" />
+        </a>
+        <div class="menu__mobile">
+          <ul class="header__menu">
+            <li class="header__menu-item">
+              <a href="/index.html" class="header__menu-link">Home</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="/about.html" class="header__menu-link">About</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="/recipes.html" class="header__menu-link">Recipes</a>
+            </li>
+          </ul>
+          <button class="header__cta">Browse recipes</button>
+        </div>
+        <img class="hamburger" src="/images/icon-hamburger-menu.svg" alt="" />
+      </nav>
     </header>
 
     <script type="module" src="/src/recipes.js"></script>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
