@@ -54,7 +54,170 @@
         <img class="hamburger" src="/images/icon-hamburger-menu.svg" alt="" />
       </nav>
     </header>
-
+    <main>
+      <section class="recipes__hero">
+        <h1 class="recipes__title">Explore our simple, healthy recipes</h1>
+        <p class="recipes__description">
+          Discover eight quick, whole-food dishes that fit real-life schedules
+          and taste amazing. Use the search bar to find a recipe by name or
+          ingredient, or simply scroll the list and let something delicious
+          catch your eye.
+        </p>
+      </section>
+      <section class="recipes__controls">
+        <div class="recipes__filters">
+          <div class="recipes__filter">
+            <button
+              class="recipes__filter-btn recipes__filter-btn--preptime"
+              aria-expanded="false"
+              aria-controls="prep-time-options"
+            >
+              Max Prep Time <img src="images/icon-chevron-down.svg" alt="" />
+            </button>
+            <div
+              class="recipes__filter-options filter__prep-time"
+              id="prep-time-options"
+              aria-hidden="true"
+            >
+              <label class="recipes__filter-label">
+                <input
+                  type="radio"
+                  value="0"
+                  name="Preptime"
+                  class="recipes__filter-input"
+                />0 minutes
+              </label>
+              <label class="recipes__filter-label">
+                <input
+                  type="radio"
+                  value="5"
+                  name="Preptime"
+                  class="recipes__filter-input"
+                />5 minutes
+              </label>
+              <label class="recipes__filter-label">
+                <input
+                  type="radio"
+                  value="10"
+                  name="Preptime"
+                  class="recipes__filter-input"
+                />10 minutes
+              </label>
+              <button class="recipes__filter-clear">Clear</button>
+            </div>
+          </div>
+          <div class="recipes__filter">
+            <button
+              class="recipes__filter-btn recipes__filter-btn--cooktime"
+              aria-expanded="false"
+              aria-controls="cook-time-options"
+            >
+              Max Cook Time <img src="images/icon-chevron-down.svg" alt="" />
+            </button>
+            <div
+              class="recipes__filter-options filter__cook-time"
+              id="cook-time-options"
+              aria-hidden="true"
+            >
+              <label class="recipes__filter-label">
+                <input
+                  type="radio"
+                  value="0"
+                  name="Cooktime"
+                  class="recipes__filter-input"
+                />0 minutes
+              </label>
+              <label class="recipes__filter-label">
+                <input
+                  type="radio"
+                  value="5"
+                  name="Cooktime"
+                  class="recipes__filter-input"
+                />5 minutes
+              </label>
+              <label class="recipes__filter-label">
+                <input
+                  type="radio"
+                  value="10"
+                  name="Cooktime"
+                  class="recipes__filter-input"
+                />10 minutes
+              </label>
+              <label class="recipes__filter-label">
+                <input
+                  type="radio"
+                  value="15"
+                  name="Cooktime"
+                  class="recipes__filter-input"
+                />15 minutes
+              </label>
+              <label class="recipes__filter-label">
+                <input
+                  type="radio"
+                  value="20"
+                  name="Cooktime"
+                  class="recipes__filter-input"
+                />20 minutes
+              </label>
+              <button class="recipes__filter-clear">Clear</button>
+            </div>
+          </div>
+        </div>
+        <div class="recipes__search">
+          <img
+            src="/images/icon-search.svg"
+            alt=""
+            class="recipes__search-icon"
+          />
+          <input
+            type="text"
+            class="recipes__search-input"
+            placeholder="Search recipes..."
+          />
+        </div>
+      </section>
+      <section class="recipes__grid">
+        <article class="recipes__card">
+          <img
+            src="/images/mediterranean-chickpea-salad-large.webp"
+            alt=""
+            class="recipes__card-image"
+          />
+          <h3 class="recipes__card-title">Mediterranean Chickpea Salad</h3>
+          <p class="recipes__card-description">
+            A refreshing, protein-packed salad tossed in a lemon-olive oil
+            dressing.
+          </p>
+          <ul class="recipes__card-meta">
+            <li class="recipes__card-meta-item">
+              <img
+                src="/images/icon-servings.svg"
+                alt=""
+                class="recipes__card-meta-icon"
+              />
+              <p class="recipes__card-meta-text">Serving: <span>2</span></p>
+            </li>
+            <li class="recipes__card-meta-item">
+              <img
+                src="/images/icon-prep-time.svg"
+                alt=""
+                class="recipes__card-meta-icon"
+              />
+              <p class="recipes__card-meta-text">Prep: <span>10</span> min</p>
+            </li>
+            <li class="recipes__card-meta-item">
+              <img
+                src="/images/icon-cook-time.svg"
+                alt=""
+                class="recipes__card-meta-icon"
+              />
+              <p class="recipes__card-meta-text">Cook: <span>0</span> min</p>
+            </li>
+          </ul>
+          <button class="recipes__card-cta">View Recipe</button>
+        </article>
+      </section>
+    </main>
     <script type="module" src="/src/recipes.js"></script>
     <script type="module" src="/src/main.js"></script>
   </body>

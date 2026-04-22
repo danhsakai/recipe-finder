@@ -262,13 +262,16 @@ hr {
 .about-philosophy__item {
   /* list-style-type: none; */
   padding-left: 18px;
-
   padding-bottom: var(--spacing-500);
   list-style-image: url('/images/icon-bullet-point.svg');
+  line-height: 1.5;
 }
+
 .about-values__item-title,
 .about-philosophy__item-title {
   font-size: var(--font-size-32);
+  margin: 0;
+  line-height: inherit;
 }
 .about-values__item-text,
 .about-philosophy__item-text {
