@@ -36,6 +36,7 @@ main {
 }
 .recipes__filter-btn {
   display: flex;
+  width: 100%;
   gap: var(--spacing-100);
   background-color: var(--neutral-0);
   border: 1px solid var(--neutral-300);
@@ -46,6 +47,7 @@ main {
 }
 .recipes__filter-options {
   display: none;
+  width: 48%;
   flex-direction: column;
   justify-content: center;
   background-color: var(--neutral-0);
@@ -150,4 +152,30 @@ main {
   font-size: var(--font-size-18);
   border-radius: var(--radius-full);
   cursor: pointer;
+}
+@media (max-width: 768px) {
+  main {
+    width: 95%;
+  }
+  .recipes__filter-btn {
+    font-size: var(--font-size-18);
+  }
+  .recipes__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  main {
+    width: 92%;
+  }
+  .recipes__grid {
+    grid-template-columns: 1fr;
+  }
+  .recipes__controls {
+    flex-direction: column;
+  }
+  .recipes__search {
+    font-size: var(--font-size-18);
+    margin-top: var(--spacing-150);
+  }
 }
